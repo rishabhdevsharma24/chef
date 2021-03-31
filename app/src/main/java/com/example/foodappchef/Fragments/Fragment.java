@@ -30,6 +30,7 @@ public class Fragment  extends androidx.fragment.app.Fragment {
         recyclerViewHorizontal = (RecyclerView) view.findViewById(R.id.home_Horizontal_recyclerView1);
         recyclerViewVertical = (RecyclerView) view.findViewById(R.id.home_vertical_recyclerView1);
 
+
         return view;
     }
 }
