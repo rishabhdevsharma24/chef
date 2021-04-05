@@ -42,10 +42,10 @@ public class Fragment  extends androidx.fragment.app.Fragment implements OnRecyc
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
-        recyclerViewHorizontal = (RecyclerView) view.findViewById(R.id.home_Horizontal_recyclerView1);
+        View view = inflater.inflate(R.layout.activity_main, container, false);
+     //   recyclerViewHorizontal = (RecyclerView) view.findViewById(R.id.);
    //     recyclerViewVertical = (RecyclerView) view.findViewById(R.id.home_vertical_recyclerView1);
-        recyclerViewHorizontal = view.findViewById(R.id.home_Horizontal_recyclerView1);
+   //     recyclerViewHorizontal = view.findViewById(R.id.home_Horizontal_recyclerView1);
         recyclerViewHorizontal.setHasFixedSize(true);
         recyclerViewHorizontal.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
