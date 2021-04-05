@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.menu_home:
                         Toast.makeText(MainActivity.this, "Bottom Nav home selected", Toast.LENGTH_SHORT).show();
-                  //      getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
+                        //      getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment()).commit();
                         return true;
                     case R.id.cart_view:
                         Toast.makeText(MainActivity.this, "Bottom Nav cart_view selected", Toast.LENGTH_SHORT).show();
@@ -53,31 +53,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-//        Navigation Drawer View in main activity
-        NavigationView navigationView = findViewById(R.id.nav_view);
-
-//       Navigation Drawer Layout in menu
-        drawerLayout = findViewById(R.id.drawer_layout);
-
-//        Navigation Drawer item click event
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//               function call to public boolean itemSelected(MenuItem item) to get selected item
-                return true;
-            }
-        });
+//
+////        Navigation Drawer View in main activity
+//        NavigationView navigationView = findViewById(R.id.nav_view);
+//
+////       Navigation Drawer Layout in menu
+//        drawerLayout = findViewById(R.id.drawer_layout);
+//
+////        Navigation Drawer item click event
+//        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+////               function call to public boolean itemSelected(MenuItem item) to get selected item
+//                return true;
+//            }
+//        });
 //        Navigation Drawer: open close
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.nav_open, R.string.nav_close);
+//        drawerLayout.addDrawerListener(toggle);
+//        toggle.syncState();
+//
+////            selected fragment will be highlighted
+//        navigationView.setCheckedItem(R.id.side_nav_home);
+//    }
 
-//            selected fragment will be highlighted
-        navigationView.setCheckedItem(R.id.side_nav_home);
-    }
-
-    //    Navigation Drawer: add functionality on navigation drawer item click..
+        //    Navigation Drawer: add functionality on navigation drawer item click..
 //    public boolean itemSelected(MenuItem item) {
 //        switch (item.getItemId()) {
 //            case R.id.side_nav_home:
@@ -118,5 +118,6 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     }
+}
 
 
